@@ -35,8 +35,12 @@ Plugin 'vim-scripts/EasyGrep'
 "Plugin 'terryma/vim-multiple-cursors'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'MattesGroeger/vim-bookmarks'
-
-
+"Plugin 'amiorin/vim-project'
+Plugin 'tpope/vim-commentary'
+"Plugin 'xolox/vim-misc'
+"Plugin 'xolox/vim-session'
+Plugin 'vim-scripts/sessionman.vim'
+Plugin 'nsmgr8/vitra'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -117,6 +121,7 @@ set cursorline
 set noswapfile
 
 :set mouse=a
+:set ttymouse=xterm2
 
 let g:airline_powerline_fonts = 1
 set laststatus=2
@@ -166,10 +171,15 @@ let g:startify_custom_header = [
 \ '                                                                                                              ',
 \]
 
+" config for vim-bookmark
+let g:bookmark_sign = '♥'
+let g:bookmark_highlight_lines = 1
+
 set backspace=indent,eol,start " backspace over everything in insert mode
 
 nmap <leader>fb :%!xxd -g1 <CR> :%s/^.\{9\}//g <CR> :%s/.\{18\}$//g <CR> :%s/0a *\%$//g<CR> :g/^$/d<CR> :%s/^/0x/g<CR>  :%s/ /,0x/g<CR> :1,$-1s/$/,/g<CR>
 
+vnoremap ff :s/ \+$//g  <CR>
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
