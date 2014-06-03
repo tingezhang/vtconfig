@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400" height="120">
+<style>text {font-size:9pt;font-family: "Bitstream Vera Sans Mono", "Droid Sans Mono", "Menlo", "Monaco", "Consolas", "Inconsolata", "Courier New";fill: white; }</style><rect x="0" y="0" width="400" height="120" style="fill:black"/><g transform="translate(0, 0)"><rect x="0" y="0" width="80" height="60" style="fill:#0039B3;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">0039B3</text><text x="2" y="57" style="fill:#000000;">0</text></g>
+<g transform="translate(80, 0)"><rect x="0" y="0" width="80" height="60" style="fill:#038191;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">038191</text><text x="2" y="57" style="fill:#000000;">1</text></g>
+<g transform="translate(160, 0)"><rect x="0" y="0" width="80" height="60" style="fill:#E3701E;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">E3701E</text><text x="2" y="57" style="fill:#000000;">2</text></g>
+<g transform="translate(240, 0)"><rect x="0" y="0" width="80" height="60" style="fill:#7D005C;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">7D005C</text><text x="2" y="57" style="fill:#000000;">3</text></g>
+<g transform="translate(320, 0)"><rect x="0" y="0" width="80" height="60" style="fill:#E0EB4D;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">E0EB4D</text><text x="2" y="57" style="fill:#000000;">4</text></g>
+
+<g transform="translate(0, 60)"><rect x="0" y="0" width="80" height="60" style="fill:#005FAF;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">005FAF</text><text x="2" y="57" style="fill:#000000;">25</text></g>
+<g transform="translate(80, 60)"><rect x="0" y="0" width="80" height="60" style="fill:#008787;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">008787</text><text x="2" y="57" style="fill:#000000;">30</text></g>
+<g transform="translate(160, 60)"><rect x="0" y="0" width="80" height="60" style="fill:#D75F00;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">D75F00</text><text x="2" y="57" style="fill:#000000;">166</text></g>
+<g transform="translate(240, 60)"><rect x="0" y="0" width="80" height="60" style="fill:#87005F;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">87005F</text><text x="2" y="57" style="fill:#000000;">89</text></g>
+<g transform="translate(320, 60)"><rect x="0" y="0" width="80" height="60" style="fill:#D7D75F;"/><text x="40" y="32" style="fill:#000000;text-anchor:middle;">D7D75F</text><text x="2" y="57" style="fill:#000000;">185</text></g>
+
+</svg>
