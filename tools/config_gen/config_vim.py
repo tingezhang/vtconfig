@@ -12,7 +12,7 @@ dir_file_name = ''
 file_type_name = ''
 
 def print_usage():
-    print("====================== USAGE =======================\n")
+    lp rint("====================== USAGE =======================\n")
     print("python config_vim.py -f PATH_TO_FILE -t PATH_TO_TYPE\n")
     print("PATH_TO_FILE: source file search path, one path a line\n")
     print("PATH_TO_TYPE: source file name pattern need to cared about, one pattern a line\n")
@@ -118,8 +118,13 @@ def main():
 
     print("echo \":cs add cscope.out\\n\" >> .vimrc")
     fFile.write("\n:cs add cscope.out\n")
-    fFile.close()
 
+    print("echo \":set tags=tags\\n\" >> .vimrc")
+    fFile.write("\n:set tags=tags\n")
+
+    print("echo \":set cscopetag\\n\" >> .vimrc")
+    fFile.write("\n:set cscopetag\n")
+    fFile.close()
 
 main()
 
