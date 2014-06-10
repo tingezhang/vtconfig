@@ -22,6 +22,13 @@
 ## vundle
 ![vundle install UI](/images/vundle.jpg)
 1. plugin to manager other plugins, make plugins installation/remove very easily
-1. https://github.com/gmarik/Vundle.vim
-1. install command "vim +PluginInstall +qall"
+2. https://github.com/gmarik/Vundle.vim
+3. install command "vim +PluginInstall +qall"
+
+## vim-startify
+![vim-startify](/images/startify.jpg)
+1. https://github.com/mhinz/vim-startify
+     config   |  description
+------------- | -------------
+    g:startify_custom_header | config the custom header
 
