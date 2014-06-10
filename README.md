@@ -246,3 +246,14 @@ noremap <C-Right> <C-W>l
     [[ | jump to front of function body or front of previous function body
     [] | jump to end of function body
     ]] | jump to the front of next function body
+
+# tmux stuff
+## session relative command
+ No | Commmand | Description
+----|----------|--------------
+ 1 | tmux | open a new tmux session
+ 2 | tmux list-sessions | list all session exists
+ 3 | tmux attach -s $(session-name) | attach a session
+ 4 | Ctrl-a + d | detach current session 
+ 5 | Ctrl-a + $ | modify current session name
+ 6 | Ctrl-a + , | modify current window name
