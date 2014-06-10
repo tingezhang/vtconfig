@@ -49,3 +49,8 @@ add the following mapping in ~/.vimrc
 ```
 :noremap <leader>nf :NERDTreeFind<CR>
 ```
+     Command |  description
+------------- | -------------
+    \nf |  find currently edited buffer in the NERDTree Window
+![nerdfind](/images/nerdfind.gif)
+
