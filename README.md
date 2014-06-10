@@ -195,3 +195,32 @@ let g:vim_markdown_folding_disabled=1 | disable folding
  7 | :bufdo[1]{cmd} | Execute{cmd} in each buffer in the buffer list
  8 | :sb[n] | split window to show buffer [N] in horizontal mode
  9 | :e# | edit the last edit buffer
+
+## Window command
+1. Add the following definition in ~/.vimrc
+1. use Ctrl-j, Ctrl-k, Ctrl-h, Ctrl-l to swith between windows
+1. enable window selection/window resize by mouse
+```
+noremap <C-J>     <C-W>j
+noremap <C-K>     <C-W>k
+noremap <C-H>     <C-W>h
+noremap <C-L>     <C-W>l
+
+noremap <C-Down>  <C-W>j
+noremap <C-Up>    <C-W>k
+noremap <C-Left>  <C-W>h
+noremap <C-Right> <C-W>l
+
+:set mouse=a
+:set ttymouse=xterm2
+```
+    Command | Descriptoin
+------------|---------------
+ Ctrl-W +, Ctrl-W - | adjust window row number
+ Ctrl-W \>, Ctrl-W < | adjust window column number
+ 20 Ctrl-W [+ or =] | adjust 20 unit one time
+ Ctrl-W \| | adjust window to maximum of column
+ Ctrl-W _ | adjust window to maximum of row
+ 'x' in Tlist window | toggle TList window full screen display
+
+
