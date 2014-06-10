@@ -105,10 +105,10 @@ nnoremap <F6> :GundoToggle<CR>
 
     Command | Description
 ------------|---------------
-    <Ctrl-p> | invoke CtrlP in find file mode
-    <Ctrl-f>\|<Ctrl-b> | cycle between tree modes(Find files, Find Buffer, Find MRU)
-    <Ctrl-d> | switch to filename only search instead of full path
-    <Ctrl-j> | to navigate in the result list
+    Ctrl-p | invoke CtrlP in find file mode
+    Ctrl-f\|Ctrl-b | cycle between tree modes(Find files, Find Buffer, Find MRU)
+    Ctrl-d | switch to filename only search instead of full path
+    Ctrl-j | to navigate in the result list
 
 ![CtrlP](/images/ctrlp1.jpg)
 
@@ -144,8 +144,8 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 
     Command | Description
 ------------|----------------
-    <Ctrl-n> | select next key
-    <Ctrl-p> | in **Visual** mode will remove the current virtual cursor and go back to the previous virtual cursor location.
-    <Ctrl-x> | in **Visual** mode will remove the current virtual cursor and skip to the next virtual cursor location.
+    Ctrl-n | select next key
+    Ctrl-p | in **Visual** mode will remove the current virtual cursor and go back to the previous virtual cursor location.
+    Ctrl-x | in **Visual** mode will remove the current virtual cursor and skip to the next virtual cursor location.
 
 ![vim-multiple-cursors](/images/m_cursor_final.jpg)
