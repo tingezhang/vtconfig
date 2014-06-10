@@ -16,4 +16,12 @@
     3. config putty or terminal to use powerline-consola font to
 
 
+# config for plugins
+1. some configs/tips for some pop plugins
+
+## vundle
+![vundle install UI](/images/vundle.jpg)
+1. plugin to manager other plugins, make plugins installation/remove very easily
+1. https://github.com/gmarik/Vundle.vim
+1. install command "vim +PluginInstall +qall"
 
