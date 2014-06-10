@@ -45,7 +45,8 @@
 ![vim-easymotion](/images/easymotion_2.jpg)
 
 ## nerdtree
-add the following mapping in ~/.vimrc
+1. https://github.com/scrooloose/nerdtree
+2. add the following mapping in ~/.vimrc
 ```
 :noremap <leader>nf :NERDTreeFind<CR>
 ```
@@ -54,3 +55,12 @@ add the following mapping in ~/.vimrc
     \nf |  find currently edited buffer in the NERDTree Window
 ![nerdfind](/images/nerdfind.gif)
 
+## nerdcommenter
+1. https://github.com/scrooloose/nerdcommenter
+2. plugin to help comment/uncomment select code block
+
+     Command | Description 
+-------------|--------------
+    \cc      | Comment out the current line or text selected in visual mode
+    \cu      | Uncomments the selected line(s)
+![nerdcommenter](/images/nerdcommenter.gif)
