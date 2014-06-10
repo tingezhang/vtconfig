@@ -75,6 +75,6 @@
      s  | Sync the current diff. can also select a range and press 's' to sync
      \dj | Diff next (think j for down)
      \dk | Diff previous(think k for up)
-![DirDiff](/images/dirdiff1.jpg
+![DirDiff](/images/dirdiff1.jpg)
 
 
