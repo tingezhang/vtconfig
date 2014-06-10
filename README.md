@@ -31,3 +31,15 @@
     g:startify_custom_header | config the custom header
 1. https://github.com/mhinz/vim-startify
 ![vim-startify](/images/startify.jpg)
+
+## vim-easymotion
+     command  |  description
+------------- | -------------
+      \\w | beginning of word forward
+      \\b | beginning of word backward
+      \\e | end of word forward
+      \\ge | end of word backward
+      \\j | line downward
+      \\k | line upward
+1. https://github.com/Lokaltog/vim-easymotion
+![vim-easymotion](/images/easymotion_2.jpg)
