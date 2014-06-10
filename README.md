@@ -1,5 +1,5 @@
 
-![title](/images/matrix1.jpg = 700x)
+![title](/images/matrix1.jpg =700x)
 
 # install
 1. git clone https://github.com/tingezhang/vtconfig.git
