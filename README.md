@@ -1,5 +1,6 @@
 
-![title](/images/matrix1.jpg =700x)
+![title](/images/matrix1.jpg)
+<img src="https://github.com/tingezhang/vtconfig/blob/master/images/matrix1.jpg" alt="img text" />
 
 # install
 1. git clone https://github.com/tingezhang/vtconfig.git
