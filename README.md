@@ -1,6 +1,6 @@
 
 ![title](/images/matrix1.jpg)
-<img src="https://raw.githubusercontent.com/tingezhang/vtconfig/master/images/matrix1.jpg" alt="img text" />
+<!--<img src="https://raw.githubusercontent.com/tingezhang/vtconfig/master/images/matrix1.jpg" alt="img text" />-->
 
 # install
 1. git clone https://github.com/tingezhang/vtconfig.git
