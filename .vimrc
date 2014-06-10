@@ -37,6 +37,7 @@ Plugin 'vim-scripts/AnsiEsc.vim'
 "Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-scripts/matrix.vim--Yang'
+Plugin 'plasticboy/vim-markdown'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
