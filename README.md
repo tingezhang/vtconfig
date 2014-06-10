@@ -64,3 +64,17 @@
     \cc      | Comment out the current line or text selected in visual mode
     \cu      | Uncomments the selected line(s)
 ![nerdcommenter](/images/nerdcommenter.gif)
+
+## DirDiff
+1. https://github.com/vim-scripts/DirDiff.vim
+1. plugins to help compare diff between two directory
+
+    Command | Description
+---------------------------
+ vim . -c ":DirDiff DIRECTORY_A DIRECTORY_B" | compare two directory
+     s  | Sync the current diff. can also select a range and press 's' to sync
+     \dj | Diff next (think j for down)
+     \dk | Diff previous(think k for up)
+![DirDiff](/images/dirdiff1.jpg
+
+
