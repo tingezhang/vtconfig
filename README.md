@@ -43,3 +43,9 @@
       \\k | line upward
 1. https://github.com/Lokaltog/vim-easymotion
 ![vim-easymotion](/images/easymotion_2.jpg)
+
+## nerdtree
+add the following mapping in ~/.vimrc
+```
+:noremap <leader>nf :NERDTreeFind<CR>
+```
