@@ -181,3 +181,17 @@ let g:vim_markdown_folding_disabled=1 | disable folding
 1. https://github.com/vim-scripts/matrix.vim--Yang
 1. screen save for funny
 
+# useful commands
+
+## buffer operation
+ No | Command | example
+----|---------|----------
+ 1 | :buffers | show all buffers(the same as :ls)
+ 2 | :buffer 2(b2) | show buffer 2
+ 3 | :bf | buffer first: show first buffer
+ 4 | :bn | buffer next: show next buffer
+ 5 | :bp | buffer previous: show previous buffer
+ 6 | :bd 3 | buffer delete: delete buffer 4
+ 7 | :bufdo[1]{cmd} | Execute{cmd} in each buffer in the buffer list
+ 8 | :sb[n] | split window to show buffer [N] in horizontal mode
+ 9 | :e# | edit the last edit buffer
