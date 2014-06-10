@@ -20,15 +20,14 @@
 1. some configs/tips for some pop plugins
 
 ## vundle
-![vundle install UI](/images/vundle.jpg)
 1. plugin to manager other plugins, make plugins installation/remove very easily
 2. https://github.com/gmarik/Vundle.vim
 3. install command "vim +PluginInstall +qall"
+![vundle install UI](/images/vundle.jpg)
 
 ## vim-startify
-![vim-startify](/images/startify.jpg)
-1. https://github.com/mhinz/vim-startify
      config   |  description
 ------------- | -------------
     g:startify_custom_header | config the custom header
-
+1. https://github.com/mhinz/vim-startify
+![vim-startify](/images/startify.jpg)
