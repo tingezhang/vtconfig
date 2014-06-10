@@ -106,7 +106,7 @@ nnoremap <F6> :GundoToggle<CR>
     Command | Description
 ------------|---------------
     Ctrl-p | invoke CtrlP in find file mode
-    Ctrl-f\|Ctrl-b | cycle between tree modes(Find files, Find Buffer, Find MRU)
+    Ctrl-f , Ctrl-b | cycle between tree modes(Find files, Find Buffer, Find MRU)
     Ctrl-d | switch to filename only search instead of full path
     Ctrl-j | to navigate in the result list
 
@@ -149,3 +149,35 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
     Ctrl-x | in **Visual** mode will remove the current virtual cursor and skip to the next virtual cursor location.
 
 ![vim-multiple-cursors](/images/m_cursor_final.jpg)
+
+
+## YouCompleteMe
+1. https://github.com/Valloric/YouCompleteMe
+1. Vim Killer plugin for code completion engine
+1. C/S architecture, make the completion suggestion very fast
+1. Configure is a little complicated
+1. Make sure Vim 7.3.584 with python2 support. some time need rebuild vim to the latest version(7.4)
+    1. https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+
+![YouCompleteMe](/images/complete1.jpg)
+
+
+## syntastic
+1. https://github.com/scrooloose/syntastic
+1. Syntastic is a syntax checking plugin for Vim that runs files through external syntax checkers and displays any resulting errors to the user
+1. following picture is from his github
+![syntastic](/images/screenshot_1.png)
+
+
+## vim-markdown
+1. https://github.com/plasticboy/vim-markdown
+1. Syntax highlighting, matching rules and mappings for the original Markdown and extensions.
+
+    Command | Description
+------------|----------------
+let g:vim_markdown_folding_disabled=1 | disable folding
+
+## matrix
+1. https://github.com/vim-scripts/matrix.vim--Yang
+1. screen save for funny
+
