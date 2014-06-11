@@ -294,3 +294,12 @@ noremap <C-Right> <C-W>l
     cmd: save-buffer[FILE_NAME] | output buffer into file
     cmd: list-buffers, PREFIX + = | list all past bufers and paste selected buffer contents
 
+## mouse operation config
+1. Mouse support - set to on if you want to use the mouse
+```
+setw -g mode-mouse on
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
+set -g mouse-select-window on
+```
+
