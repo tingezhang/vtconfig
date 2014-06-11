@@ -307,7 +307,8 @@ set -g mouse-select-window on
 ```
 
 # memect
-![memcet](/images/memcet.jpg)
+![memect](/images/memect.jpg)
+
 1. www.memect.com is a web service targeted memory connection, have many topics 
     1. http://u.memect.com/vim    for vim topic
     2. http://u.memect.com/emacs/ for emacs topic
