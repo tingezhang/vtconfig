@@ -276,6 +276,7 @@ noremap <C-Right> <C-W>l
 
 ## work with text and buffers
 1. add "setw -g mode-keys vi" in the .tmux.conf file
+
     Command | Description
 ------------|-----------------
     PREFIX + [ | enter copy mode
