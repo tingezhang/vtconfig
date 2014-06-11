@@ -1,6 +1,9 @@
 
 ![title](/images/matrix1.jpg)
 <!--<img src="https://raw.githubusercontent.com/tingezhang/vtconfig/master/images/matrix1.jpg" alt="img text" />-->
+# resource 
+1. http://u.memect.com/vim/
+![memect_vim](/images/memect_vim.jpg)
 
 # install
 1. git clone https://github.com/tingezhang/vtconfig.git
