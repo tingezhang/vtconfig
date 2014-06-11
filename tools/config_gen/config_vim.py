@@ -12,7 +12,7 @@ dir_file_name = ''
 file_type_name = ''
 
 def print_usage():
-    lp rint("====================== USAGE =======================\n")
+    print("====================== USAGE =======================\n")
     print("python config_vim.py -f PATH_TO_FILE -t PATH_TO_TYPE\n")
     print("PATH_TO_FILE: source file search path, one path a line\n")
     print("PATH_TO_TYPE: source file name pattern need to cared about, one pattern a line\n")
