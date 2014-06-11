@@ -165,7 +165,7 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 ## syntastic
 1. https://github.com/scrooloose/syntastic
 1. Syntastic is a syntax checking plugin for Vim that runs files through external syntax checkers and displays any resulting errors to the user
-1. following picture is from his github
+1. **following picture is from his github**
 ![syntastic](/images/screenshot_1.png)
 
 
@@ -179,7 +179,7 @@ let g:vim_markdown_folding_disabled=1 | disable folding
 
 ## matrix
 1. https://github.com/vim-scripts/matrix.vim--Yang
-1. screen save for funny
+1. screen save for funny(the first pic)
 
 # useful commands
 
