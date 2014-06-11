@@ -306,3 +306,9 @@ set -g mouse-resize-pane on
 set -g mouse-select-window on
 ```
 
+# memect
+1. www.memect.com is a web service targeted memory connection, have many topics 
+        1. http://u.memect.com/vim    for vim topic
+        1. http://u.memect.com/emacs/ for emacs topic
+        1. http://u.memect.com/daijian/ for big data topic
+
