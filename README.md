@@ -257,3 +257,39 @@ noremap <C-Right> <C-W>l
  4 | Ctrl-a + d | detach current session 
  5 | Ctrl-a + $ | modify current session name
  6 | Ctrl-a + , | modify current window name
+
+## window relative command
+ No | Command | Description
+----|---------|--------------
+  1 | PREFIX + c | create a new window in current session
+  2 | :exit | exit current pane/window in a session
+  3 | PREFIX + , | modify current window name
+  4 | PREFIX + N | switch to Nth window in current session(N is 1 to 9)
+  5 | PREFIX + w | list all windows in current sessions
+  6 | PREFIX + - | create a new pane in current window, split horizontal
+  7 | PREFIX + | | create a new pane in current window, split vertical
+  8 | PREFIX + h | move to pane above in current window
+  9 | PREFIX + j | move to pane below in current window
+  10| PREFIX + k | move to pane left in current window
+  11| PREFIX + l | move to pane right in current window
+  12| PREFIX + $ | modify session name
+
+## work with text and buffers
+1. add "setw -g mode-keys vi" in the .tmux.conf file
+    Command | Description
+------------|-----------------
+    PREFIX + [ | enter copy mode
+    h,j,k,l | same as shortcut in vim
+    ENTER | exit copy mode
+    Ctrl-b, Ctrl-f, g, G | move page, top, bottom
+    ? | search backward in the buffer, edit search pattern and press ENTER
+    n | jump to next match item
+    N | jump to previous match item
+    / | search forward through the buffer
+    SPACE .. ENTER | press SPACE, and the move the cursor to the end of the text, and presss ENTER to copy
+    PREFIX + ] | paste
+    cmd: capture-pane | capture a pane
+    cmd: show-buffer | show buffer content
+    cmd: save-buffer[FILE_NAME] | output buffer into file
+    cmd: list-buffers, PREFIX + = | list all past bufers and paste selected buffer contents
+
