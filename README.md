@@ -305,6 +305,9 @@ set -g mouse-select-pane on
 set -g mouse-resize-pane on
 set -g mouse-select-window on
 ```
+# config for .bashrc
+1. alias tmux="tmux -2"
+1. alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # memect
 ![memect](/images/memect.jpg)
