@@ -38,6 +38,7 @@ Plugin 'vim-scripts/AnsiEsc.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-scripts/matrix.vim--Yang'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'klen/python-mode'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -262,3 +263,8 @@ highlight BookmarkSign ctermbg=166 ctermfg=89
 highlight BookmarkAnnotationSign ctermbg=30  ctermfg=89
 highlight BookmarkLine ctermbg=166 ctermfg=NONE
 highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
+
+" python mode
+let g:pymode_lint_ignore="W"
+let g:pymode_lint_sort = ['E', 'C', 'I']
+let g:pymode_rope_completion = 0
