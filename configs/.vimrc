@@ -267,4 +267,4 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 " python mode
 let g:pymode_lint_ignore="W"
 let g:pymode_lint_sort = ['E', 'C', 'I']
-let g:pymode_rope_completion = 0
+let g:pymode_rope_completion = 1
