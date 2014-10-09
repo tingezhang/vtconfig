@@ -268,3 +268,7 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 let g:pymode_lint_ignore="W"
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_rope_completion = 1
+
+" Disable beeping
+set noerrorbells
+set vb t_vb=
