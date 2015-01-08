@@ -190,22 +190,22 @@ nmap <leader>fb :%!xxd -g1 <CR> :%s/^.\{9\}//g <CR> :%s/.\{18\}$//g <CR> :%s/0a 
 
 "
 let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
+    \ ['032',       'RoyalBlue3'],
+    \ ['040',       'SeaGreen3'],
+    \ ['056',       'DarkOrchid3'],
+    \ ['072',       'firebrick3'],
+    \ ['096',       'RoyalBlue3'],
+    \ ['112',       'SeaGreen3'],
+    \ ['128',       'DarkOrchid3'],
+    \ ['144',       'firebrick3'],
+    \ ['152',       'RoyalBlue3'],
+    \ ['136',       'SeaGreen3'],
+    \ ['120',       'DarkOrchid3'],
+    \ ['104',       'firebrick3'],
+    \ ['080',       'RoyalBlue3'],
+    \ ['064',       'SeaGreen3'],
+    \ ['048',       'DarkOrchid3'],
+    \ ['024',       'firebrick3'],
     \ ]
 
 let g:rbpt_max = 16
