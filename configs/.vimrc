@@ -39,6 +39,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-scripts/matrix.vim--Yang'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'klen/python-mode'
+Plugin 'suan/vim-instant-markdown'
+"Plugin 'tpope/vim-markdown'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -102,6 +104,9 @@ let g:miniBufExplModSelTarget = 1
 :nmap sc :SessionClose<CR>
 
 :map <F7> <Esc>A("%s,%d \n", __FUNCTION__, __LINE__);<Esc>bbbbbbb
+:map <F8> <Esc>O#!/usr/bin/env python<CR>#<CR># -*- coding: utf-8 -*-<CR><Esc>
+:map <C-f>d <Esc>0dwp0<Esc>:w<CR>
+:map <C-f>u <Esc>0xwp0<Esc>:w<CR>
 
 " key map for cscope
 :nmap <C-f>s :cs find s <C-R><C-W><CR>
@@ -119,12 +124,13 @@ let g:miniBufExplModSelTarget = 1
 set noswapfile
 
 let g:airline_powerline_fonts = 1
-set laststatus=2
-let g:airline_detect_whitespace          = 0
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
+"set laststatus=2
+let g:airline#extensions#whitespace#enable = 0
+let g:airline#extensions#tabline#enabled = 0
+"let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_theme = "molokai"
-let g:airline#extensions#bufferline#enabled = 1
+"let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#bufferline#enabled = 0
 let g:airline#extensions#tmuxline#enabled = 0
 
 :set mouse=a
