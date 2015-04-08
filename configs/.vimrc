@@ -274,7 +274,12 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 let g:pymode_lint_ignore="W"
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_rope_completion = 1
+let g:pymode_quickfix_minheight = 1
+let g:pymode_quickfix_maxheight = 2
+let g:pymode_rope_goto_definition_cmd = 'e'
 
 " Disable beeping
 set noerrorbells
 set vb t_vb=
+
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
