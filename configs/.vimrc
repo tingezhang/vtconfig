@@ -41,6 +41,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'klen/python-mode'
 Plugin 'suan/vim-instant-markdown'
 "Plugin 'tpope/vim-markdown'
+Plugin 'davidhalter/jedi-vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -273,7 +274,8 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 " python mode
 let g:pymode_lint_ignore="W"
 let g:pymode_lint_sort = ['E', 'C', 'I']
-let g:pymode_rope_completion = 1
+let g:pymode_rope = 0
+let g:pymode_rope_completion = 0
 let g:pymode_quickfix_minheight = 1
 let g:pymode_quickfix_maxheight = 2
 let g:pymode_rope_goto_definition_cmd = 'e'
@@ -283,3 +285,5 @@ set noerrorbells
 set vb t_vb=
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+let g:jedi#use_tabs_not_buffers = 0
