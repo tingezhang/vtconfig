@@ -309,6 +309,22 @@ set -g mouse-select-window on
 1. alias tmux="tmux -2"
 1. alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
+# Tmux Plugin Manager
+1. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+1. Put this at the bottom of .tmux.conf
+    1. {{{
+    # List of plugins
+    set -g @plugin 'tmux-plugins/tpm'
+    set -g @plugin 'tmux-plugins/tmux-sensible'
+    set -g @plugin 'tmux-plugins/tmux-resurrect'
+    set -g @plugin 'tmux-plugins/tmux-sessionist'
+
+    # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+    run '~/.tmux/plugins/tpm/tpm'
+    }}}
+1. install: hit prefix + I (I as in Install) to fetch the plugin
+1. uninstall: hit prefix + alt + u (u as in uinstall) to remove the plugin
+
 # memect
 ![memect](/images/memect.jpg)
 
