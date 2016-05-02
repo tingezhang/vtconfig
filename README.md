@@ -9,7 +9,7 @@
 1. git clone https://github.com/tingezhang/vtconfig.git
 2. cd vtconfig
 3. cp configs/.vimrc configs/.tmux.conf configs/.tmux.status.conf ~/
-4. mkdir ~/.vim/bundle
+4. mkdir -p ~/.vim/bundle
 5. git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 6. vim +PluginInstall +qall
 7.  modify ~/.bashrc, add "alias tmux='tmux -2'" at the end of file
