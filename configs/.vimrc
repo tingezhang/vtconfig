@@ -10,7 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Lokaltog/powerline'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Lokaltog/vim-easymotion'
 "Plugin 'junegunn/vim-easy-align'
@@ -34,8 +34,8 @@ Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/sessionman.vim'
 Plugin 'vim-scripts/AnsiEsc.vim'
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'scrooloose/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-scripts/matrix.vim--Yang'
 Plugin 'plasticboy/vim-markdown'
@@ -227,11 +227,11 @@ au Syntax * RainbowParenthesesLoadBraces
 " for ycm
 let g:ycm_error_symbol = '>>'
 let g:ycm_warning_symbol = '>*'
+let g:ycm_autoclose_preview_window_after_insertion = 1
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nmap <F4> :YcmDiags<CR>
-
 
 " MiniBufExpl  config
 :let g:did_minibufexplorer_syntax_inits = 1
@@ -278,6 +278,7 @@ let g:pymode_lint_ignore="W"
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
+let g:pymode_rope_complete_on_dot = 0
 let g:pymode_quickfix_minheight = 1
 let g:pymode_quickfix_maxheight = 2
 let g:pymode_rope_goto_definition_cmd = 'e'
@@ -289,3 +290,8 @@ set vb t_vb=
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 let g:jedi#use_tabs_not_buffers = 0
+
+"if v:version >= 700
+"    au BufLeave * let b:winview = winsaveview()
+"    au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
+"endif
