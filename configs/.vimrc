@@ -41,7 +41,7 @@ Plugin 'vim-scripts/matrix.vim--Yang'
 Plugin 'plasticboy/vim-markdown'
 "Plugin 'klen/python-mode'
 Plugin 'suan/vim-instant-markdown'
-Plugin 'tell-k/vim-autoflake'
+"Plugin 'tell-k/vim-autoflake'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'vim-syntastic/syntastic'
 "Plugin 'tpope/vim-markdown'
@@ -304,7 +304,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 
 let g:syntastic_python_checkers=['pylint']
 "let g:syntastic_python_checkers=['pep8']
@@ -317,5 +317,6 @@ let g:syntastic_python_pylint_args='--rcfile=~/default.pylintrc'
 "endif
 "
 
-let g:autoflake_remove_all_unused_imports=1
-let g:autoflake_disable_show_diff=1
+let g:autopep8_disable_show_diff=1
+"let g:autoflake_remove_all_unused_imports=1
+"let g:autoflake_disable_show_diff=1
