@@ -35,12 +35,15 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/sessionman.vim'
 Plugin 'vim-scripts/AnsiEsc.vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-scripts/matrix.vim--Yang'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'tell-k/vim-autoflake'
+Plugin 'tell-k/vim-autopep8'
+Plugin 'vim-syntastic/syntastic'
 "Plugin 'tpope/vim-markdown'
 "Plugin 'davidhalter/jedi-vim'
 
@@ -119,7 +122,7 @@ let g:miniBufExplModSelTarget = 1
 :set ruler
 :set t_Co=256
 :highlight ColorColumn ctermbg=239
-:set colorcolumn=80
+:set colorcolumn=120
 
 "set cursorline
 
@@ -274,14 +277,15 @@ highlight BookmarkLine ctermbg=166 ctermfg=NONE
 highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 
 " python mode
-let g:pymode_lint_ignore="W"
+"let g:pymode_lint_ignore="W"
 let g:pymode_lint_sort = ['E', 'C', 'I']
 let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_quickfix_minheight = 1
-let g:pymode_quickfix_maxheight = 2
+let g:pymode_quickfix_maxheight = 10
 let g:pymode_rope_goto_definition_cmd = 'e'
+let g:pymode_lint_on_fly = 1
 
 " Disable beeping
 set noerrorbells
@@ -291,7 +295,27 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 let g:jedi#use_tabs_not_buffers = 0
 
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_python_checkers=['pylint']
+"let g:syntastic_python_checkers=['pep8']
+"let g:syntastic_python_pylint_args='--disable=C0111,R0903,C0301'
+let g:syntastic_python_pylint_args='--rcfile=~/default.pylintrc'
+
 "if v:version >= 700
 "    au BufLeave * let b:winview = winsaveview()
 "    au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
 "endif
+"
+
+let g:autoflake_remove_all_unused_imports=1
+let g:autoflake_disable_show_diff=1
