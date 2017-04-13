@@ -13,6 +13,10 @@
 5. git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 6. vim +PluginInstall +qall
 7.  modify ~/.bashrc, add "alias tmux='tmux -2'" at the end of file
+    1. alias tmux="tmux -2"
+    2. alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    3. set -o vi
+    4. export EDITOR=vim
 8. install font for status line:
     1. git clone https://github.com/runsisi/consolas-font-for-powerline
     2. put all font into system font directory
