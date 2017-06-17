@@ -1,0 +1,5 @@
+alias tmux="tmux -2"
+alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+set -o vi
+export EDITOR=vim
+export PATH=/home/tinge/usr/bin:$PATH
