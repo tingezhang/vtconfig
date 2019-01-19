@@ -320,3 +320,5 @@ let g:syntastic_python_pylint_args='--rcfile=~/default.pylintrc'
 let g:autopep8_disable_show_diff=1
 "let g:autoflake_remove_all_unused_imports=1
 "let g:autoflake_disable_show_diff=1
+
+set encoding=utf-8

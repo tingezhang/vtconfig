@@ -14,5 +14,5 @@ cd vim
             --enable-perlinterp=yes \
             --enable-luainterp=yes \
             --enable-gui=gtk2 --enable-cscope --prefix=/home/tinge/usr
-make VIMRUNTIMEDIR=/home/tinge/usr/share/vim/vim80
+make VIMRUNTIMEDIR=/home/tinge/usr/share/vim/vim81
 make install
