@@ -76,9 +76,10 @@
 1. https://github.com/vim-scripts/EasyGrep
 2. based on ":vimgrep" command to find tag under cursor easily
 
-     Command | Description 
+ Command | Description 
 -------------|--------------
-<Leader>vv(double v) | Grep for the word under curosr
+ <Leader>vv(double v) | Grep for the word under curosr
+
 ![EasyGrep](/images/easygrep1.jpg)
 
 ## Ctrl-P
@@ -133,9 +134,9 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 1. https://github.com/plasticboy/vim-markdown
 1. Syntax highlighting, matching rules and mappings for the original Markdown and extensions.
 
-    Command | Description
+ Command | Description
 ------------|----------------
-let g:vim_markdown_folding_disabled=1 | disable folding
+ let g:vim_markdown_folding_disabled=1 | disable folding
 
 ## matrix
 1. https://github.com/vim-scripts/matrix.vim--Yang
@@ -143,6 +144,7 @@ let g:vim_markdown_folding_disabled=1 | disable folding
    1. matrix和minibufexpl存在一定冲突，先:MBEClose, 再执行:Matrix
 
 ## ale
+![ale](https://github.com/w0rp/ale/raw/master/img/example.gif?raw=true)
 
 # useful commands
 
@@ -272,7 +274,7 @@ set -g mouse-select-window on
 # Tmux Plugin Manager
 1. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 1. Put this at the bottom of .tmux.conf
-    1. {{{
+<pre><code>
     # List of plugins
     set -g @plugin 'tmux-plugins/tpm'
     set -g @plugin 'tmux-plugins/tmux-sensible'
@@ -281,7 +283,7 @@ set -g mouse-select-window on
 
     # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
     run '~/.tmux/plugins/tpm/tpm'
-    }}}
+</code></pre>
 1. install: hit prefix + I (I as in Install) to fetch the plugin
 1. uninstall: hit prefix + alt + u (u as in uinstall) to remove the plugin
 
