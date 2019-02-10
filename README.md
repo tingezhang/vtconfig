@@ -30,21 +30,21 @@
 ![vundle install UI](/images/vundle.jpg)
 
 ## vim-startify
-     config  |  description
--------------|-------------
-    g:startify_custom_header | config the custom header
+ config  |  description
+---------|-------------
+ g:startify_custom_header | config the custom header
 1. https://github.com/mhinz/vim-startify
 ![vim-startify](/images/startify.jpg)
 
 ## vim-easymotion
-     command  |  description
+ command  |  description
 -------------|-------------
-      \\w | beginning of word forward
-      \\b | beginning of word backward
-      \\e | end of word forward
-      \\ge | end of word backward
-      \\j | line downward
-      \\k | line upward
+ \\w | beginning of word forward
+ \\b | beginning of word backward
+ \\e | end of word forward
+ \\ge | end of word backward
+ \\j | line downward
+ \\k | line upward
 1. https://github.com/Lokaltog/vim-easymotion
 ![vim-easymotion](/images/easymotion_2.jpg)
 
@@ -54,9 +54,9 @@
 ```
 :noremap <leader>nf :NERDTreeFind<CR>
 ```
-     Command |  description
+ Command |  description
 -------------|-------------
-    \nf |  find currently edited buffer in the NERDTree Window
+ \nf |  find currently edited buffer in the NERDTree Window
 ![nerdfind](/images/nerdfind.gif)
 
 ## DirDiff
@@ -64,12 +64,12 @@
 2. plugins to help compare diff between two directory
 
 
-     Command | Description
+ Command | Description
 -------------|--------------
  vim . -c ":DirDiff DIRECTORY_A DIRECTORY_B" | compare two directory
-     s  | Sync the current diff. can also select a range and press 's' to sync
-     \dj | Diff next (think j for down)
-     \dk | Diff previous(think k for up)
+ s  | Sync the current diff. can also select a range and press 's' to sync
+ \dj | Diff next (think j for down)
+ \dk | Diff previous(think k for up)
 ![DirDiff](/images/dirdiff1.jpg)
 
 ## EasyGrep
@@ -85,12 +85,12 @@
 1. https://github.com/kien/ctrlp.vim
 1. Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 
-    Command | Description
+ Command | Description
 ------------|---------------
-    Ctrl-p | invoke CtrlP in find file mode
-    Ctrl-f , Ctrl-b | cycle between tree modes(Find files, Find Buffer, Find MRU)
-    Ctrl-d | switch to filename only search instead of full path
-    Ctrl-j | to navigate in the result list
+ Ctrl-p | invoke CtrlP in find file mode
+ Ctrl-f , Ctrl-b | cycle between tree modes(Find files, Find Buffer, Find MRU)
+ Ctrl-d | switch to filename only search instead of full path
+ Ctrl-j | to navigate in the result list
 
 ![CtrlP](/images/ctrlp1.jpg)
 
@@ -107,15 +107,15 @@ highlight BookmarkLine ctermbg=166 ctermfg=NONE
 highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 ```
 
-    Command | Description
-------------|---------------
-    mm | Add/Remove bookmark at current line
-    mi | Add/Edit/Remove annotation at current line
-    ma | Show all bookmarks
-    mn | Jump to next bookmark in buffer
-    mp | Jump to previous boookmark in buffer
-    mc | Clear bookmarks in current buffer only
-    mx | Clear bookmarks in all buffer
+ Command | Description
+---------|---------------
+ mm | Add/Remove bookmark at current line
+ mi | Add/Edit/Remove annotation at current line
+ ma | Show all bookmarks
+ mn | Jump to next bookmark in buffer
+ mp | Jump to previous boookmark in buffer
+ mc | Clear bookmarks in current buffer only
+ mx | Clear bookmarks in all buffer
 
 ![vim-bookmarks](/images/bookmarks1.jpg)
 
@@ -240,22 +240,22 @@ noremap <C-Right> <C-W>l
 ## work with text and buffers
 1. add "setw -g mode-keys vi" in the .tmux.conf file
 
-    Command | Description
-------------|-----------------
-    PREFIX + [ | enter copy mode
-    h,j,k,l | same as shortcut in vim
-    ENTER | exit copy mode
-    Ctrl-b, Ctrl-f, g, G | move page, top, bottom
-    ? | search backward in the buffer, edit search pattern and press ENTER
-    n | jump to next match item
-    N | jump to previous match item
-    / | search forward through the buffer
-    SPACE .. ENTER | press SPACE, and the move the cursor to the end of the text, and presss ENTER to copy
-    PREFIX + ] | paste
-    cmd: capture-pane | capture a pane
-    cmd: show-buffer | show buffer content
-    cmd: save-buffer[FILE_NAME] | output buffer into file
-    cmd: list-buffers, PREFIX + = | list all past bufers and paste selected buffer contents
+ Command | Description
+---------|-----------------
+ PREFIX + [ | enter copy mode
+ h,j,k,l | same as shortcut in vim
+ ENTER | exit copy mode
+ Ctrl-b, Ctrl-f, g, G | move page, top, bottom
+ ? | search backward in the buffer, edit search pattern and press ENTER
+ n | jump to next match item
+ N | jump to previous match item
+ / | search forward through the buffer
+ SPACE .. ENTER | press SPACE, and the move the cursor to the end of the text, and presss ENTER to copy
+ PREFIX + ] | paste
+ cmd: capture-pane | capture a pane
+ cmd: show-buffer | show buffer content
+ cmd: save-buffer[FILE_NAME] | output buffer into file
+ cmd: list-buffers, PREFIX + = | list all past bufers and paste selected buffer contents
 
 ## mouse operation config
 1. Mouse support - set to on if you want to use the mouse
@@ -284,12 +284,4 @@ set -g mouse-select-window on
     }}}
 1. install: hit prefix + I (I as in Install) to fetch the plugin
 1. uninstall: hit prefix + alt + u (u as in uinstall) to remove the plugin
-
-# memect
-![memect](/images/memect.jpg)
-
-1. www.memect.com is a web service targeted memory connection, have many topics 
-    1. http://u.memect.com/vim    for vim topic
-    2. http://u.memect.com/emacs/ for emacs topic
-    3. http://u.memect.com/daijian/ for big data topic
 
