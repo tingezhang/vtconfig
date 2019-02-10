@@ -144,7 +144,13 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
    1. matrix和minibufexpl存在一定冲突，先:MBEClose, 再执行:Matrix
 
 ## ale
+1. 异步版本的代码检查工具
 ![ale](https://github.com/w0rp/ale/raw/master/img/example.gif?raw=true)
+
+## VimGameCodeBreak
+1. 玩个游戏放松一下
+![VimGameCodeBreak](https://user-images.githubusercontent.com/1855714/27774457-7e001646-5fcd-11e7-9e90-c37eafefad9c.gif)
+
 
 # useful commands
 
