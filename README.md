@@ -177,7 +177,7 @@ noremap <C-Right> <C-W>l
 :set mouse=a
 :set ttymouse=xterm2
 ```
-    Command | Description
+ Command | Description
 ------------|---------------
  Ctrl-W +, Ctrl-W - | adjust window row number
  Ctrl-W \>, Ctrl-W < | adjust window column number
@@ -187,7 +187,7 @@ noremap <C-Right> <C-W>l
  'x' in Tlist window | toggle TList window full screen display
 
 ## jump in files
-    Command | Description
+ Command | Description
 ------------|--------------
  A | Cursor jump to end of line and enter 'insert' mode
  Ctrl+^ | line head(first characther of line)
