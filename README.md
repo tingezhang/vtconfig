@@ -189,26 +189,26 @@ noremap <C-Right> <C-W>l
 ## jump in files
     Command | Description
 ------------|--------------
-    A | Cursor jump to end of line and enter 'insert' mode
-    Ctrl+^ | line head(first characther of line)
-    Ctrl+$ | line end
-    0(zero) | column zero of line
-    Ctrl+o | go back to previous edit point
-    Ctrl-i | go forward to next edit point
-    G | file end
-    gg | file head
-    Ctrl+] | jump to define in cscope + ctags
-    Ctrl+t | back to pre-jump tag<within ctags and cscope>
-    \\w | show beginning of word forward and then select to jump defined in easymotion
-    \\b | show beginning of work backard and then select to jump defined in easymotion
-    o(not zero) | enter a new line below current line and enter insert mode
-    O(not zero, big cap) | enter a new line above current line and enter insert mode
-    % | map 1) #if-#else-#endif 2){}
-    [# | go to end of #if-#else-#endif
-    ]# | go to begin of #if-#else-#endif
-    [[ | jump to front of function body or front of previous function body
-    [] | jump to end of function body
-    ]] | jump to the front of next function body
+ A | Cursor jump to end of line and enter 'insert' mode
+ Ctrl+^ | line head(first characther of line)
+ Ctrl+$ | line end
+ 0(zero) | column zero of line
+ Ctrl+o | go back to previous edit point
+ Ctrl-i | go forward to next edit point
+ G | file end
+ gg | file head
+ Ctrl+] | jump to define in cscope + ctags
+ Ctrl+t | back to pre-jump tag<within ctags and cscope>
+ \\w | show beginning of word forward and then select to jump defined in easymotion
+ \\b | show beginning of work backard and then select to jump defined in easymotion
+ o(not zero) | enter a new line below current line and enter insert mode
+ O(not zero, big cap) | enter a new line above current line and enter insert mode
+ % | map 1) #if-#else-#endif 2){}
+ [# | go to end of #if-#else-#endif
+ ]# | go to begin of #if-#else-#endif
+ [[ | jump to front of function body or front of previous function body
+ [] | jump to end of function body
+ ]] | jump to the front of next function body
 
 # tmux stuff
 ## session relative command
