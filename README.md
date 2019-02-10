@@ -1,9 +1,6 @@
 
 ![title](/images/matrix1.jpg)
 <!--<img src="https://raw.githubusercontent.com/tingezhang/vtconfig/master/images/matrix1.jpg" alt="img text" />-->
-# resource 
-1. http://u.memect.com/vim/
-![memect_vim](/images/memect_vim.jpg)
 
 # install
 1. git clone https://github.com/tingezhang/vtconfig.git
@@ -33,15 +30,15 @@
 ![vundle install UI](/images/vundle.jpg)
 
 ## vim-startify
-     config   |  description
-------------- | -------------
+     config  |  description
+-------------|-------------
     g:startify_custom_header | config the custom header
 1. https://github.com/mhinz/vim-startify
 ![vim-startify](/images/startify.jpg)
 
 ## vim-easymotion
      command  |  description
-------------- | -------------
+-------------|-------------
       \\w | beginning of word forward
       \\b | beginning of word backward
       \\e | end of word forward
@@ -58,26 +55,16 @@
 :noremap <leader>nf :NERDTreeFind<CR>
 ```
      Command |  description
-------------- | -------------
+-------------|-------------
     \nf |  find currently edited buffer in the NERDTree Window
 ![nerdfind](/images/nerdfind.gif)
-
-## nerdcommenter
-1. https://github.com/scrooloose/nerdcommenter
-2. plugin to help comment/uncomment select code block
-
-     Command | Description 
--------------|--------------
-    \cc      | Comment out the current line or text selected in visual mode
-    \cu      | Uncomments the selected line(s)
-![nerdcommenter](/images/nerdcommenter.gif)
 
 ## DirDiff
 1. https://github.com/vim-scripts/DirDiff.vim
 2. plugins to help compare diff between two directory
 
 
-     Command | Description 
+     Command | Description
 -------------|--------------
  vim . -c ":DirDiff DIRECTORY_A DIRECTORY_B" | compare two directory
      s  | Sync the current diff. can also select a range and press 's' to sync
@@ -93,18 +80,6 @@
 -------------|--------------
 <Leader>vv(double v) | Grep for the word under curosr
 ![EasyGrep](/images/easygrep1.jpg)
-
-## Gundo
-1. https://github.com/sjl/gundo.vim
-1. Gundo.vim is Vim plugin to visualize your Vim undo tree.
-1. Add the following mapping in ~/.vimrc
-```
-nnoremap <F6> :GundoToggle<CR>
-```
-     Command | Description 
--------------|--------------
-    F6 | Togglee undo window
-![Gundo](/images/gundo1.jpg)
 
 ## Ctrl-P
 1. https://github.com/kien/ctrlp.vim
@@ -144,20 +119,6 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 
 ![vim-bookmarks](/images/bookmarks1.jpg)
 
-
-## vim-multiple-cursors
-1. https://github.com/terryma/vim-multiple-cursors
-1. https://github.com/terryma/vim-multiple-cursors
-
-    Command | Description
-------------|----------------
-    Ctrl-n | select next key
-    Ctrl-p | in **Visual** mode will remove the current virtual cursor and go back to the previous virtual cursor location.
-    Ctrl-x | in **Visual** mode will remove the current virtual cursor and skip to the next virtual cursor location.
-
-![vim-multiple-cursors](/images/m_cursor_final.jpg)
-
-
 ## YouCompleteMe
 1. https://github.com/Valloric/YouCompleteMe
 1. Vim Killer plugin for code completion engine
@@ -167,14 +128,6 @@ highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
     1. https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
 
 ![YouCompleteMe](/images/complete1.jpg)
-
-
-## syntastic
-1. https://github.com/scrooloose/syntastic
-1. Syntastic is a syntax checking plugin for Vim that runs files through external syntax checkers and displays any resulting errors to the user
-1. **following picture is from his github**
-![syntastic](/images/screenshot_1.png)
-
 
 ## vim-markdown
 1. https://github.com/plasticboy/vim-markdown
@@ -187,6 +140,9 @@ let g:vim_markdown_folding_disabled=1 | disable folding
 ## matrix
 1. https://github.com/vim-scripts/matrix.vim--Yang
 1. screen save for funny(the first pic)
+   1. matrix和minibufexpl存在一定冲突，先:MBEClose, 再执行:Matrix
+
+## ale
 
 # useful commands
 

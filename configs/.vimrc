@@ -12,40 +12,31 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Lokaltog/powerline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Lokaltog/vim-easymotion'
-"Plugin 'junegunn/vim-easy-align'
 Plugin 'Lokaltog/vim-distinguished'
+Plugin 'tomasr/molokai'
+Plugin 'vim-scripts/peaksea'
+
+Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/winmanager'
 Plugin 'taglist.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'DirDiff.vim'
 Plugin 'fholgado/minibufexpl.vim'
-Plugin 'vim-scripts/genutils'
-Plugin 'vim-scripts/lookupfile'
 Plugin 'vim-scripts/EasyGrep'
-Plugin 'itchyny/calendar.vim'
-Plugin 'sjl/gundo.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mhinz/vim-startify'
-Plugin 'tomasr/molokai'
-Plugin 'vim-scripts/peaksea'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'MattesGroeger/vim-bookmarks'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/sessionman.vim'
-Plugin 'vim-scripts/AnsiEsc.vim'
 Plugin 'Valloric/YouCompleteMe'
-"Plugin 'scrooloose/syntastic'
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'w0rp/ale'
+Plugin 'tpope/vim-markdown'
+
+Plugin 'yuratomo/w3m.vim'
+Plugin 'johngrib/vim-game-code-break'
 Plugin 'vim-scripts/matrix.vim--Yang'
-Plugin 'plasticboy/vim-markdown'
-"Plugin 'klen/python-mode'
-Plugin 'suan/vim-instant-markdown'
-"Plugin 'tell-k/vim-autoflake'
-Plugin 'tell-k/vim-autopep8'
-Plugin 'vim-syntastic/syntastic'
-"Plugin 'tpope/vim-markdown'
-"Plugin 'davidhalter/jedi-vim'
+Plugin 'itchyny/calendar.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -67,16 +58,33 @@ filetype plugin indent on    " required
 
 :set t_Co=256
 
+let g:tagbar_left=0
 let g:NERDTree_title="[NERD Tree]"
+let g:TagBar_title="[TagBar]"
 let g:winManagerWindowLayout='NERDTree|TagList'
+"let g:winManagerWindowLayout='NERDTree|TagBar'
+"let g:winManagerWindowLayout='NERDTree,TagBar'
+"let g:winManagerWindowLayout='NERDTree|TagList,BufExplorer'
 function! NERDTree_Start()
+	exec 'q'
 	exec 'NERDTree'
 endfunction
 function! NERDTree_IsValid()
 	return 1
 endfunction
 
-nmap wm :if IsWinManagerVisible() <BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif <CR><CR>
+function! TagBar_Start()
+	exec 'q'
+	exec 'TagbarOpen'
+endfunction
+
+function! TagBar_IsValid()
+	return 0
+endfunction
+let g:tagbar_vertical = 100
+
+"nmap wm :if IsWinManagerVisible() <BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif <CR><CR>
+nmap wm :if IsWinManagerVisible() <BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>endif <CR><CR>
 
 "colorscheme distinguished
 colorscheme molokai
@@ -255,18 +263,9 @@ noremap <C-Up>    <C-W>k
 noremap <C-Left>  <C-W>h
 noremap <C-Right> <C-W>l
 
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-
-
 
 " NERDTree config
 noremap <leader>nf :NERDTreeFind<CR>
-
-" gundo config
-nnoremap <F6> :GundoToggle<CR>
 
 " vim-bookmarks config
 let g:bookmark_sign = '♥'
@@ -276,49 +275,23 @@ highlight BookmarkAnnotationSign ctermbg=30  ctermfg=89
 highlight BookmarkLine ctermbg=166 ctermfg=NONE
 highlight BookmarkAnnotationLine ctermbg=30  ctermfg=NONE
 
-" python mode
-"let g:pymode_lint_ignore="W"
-let g:pymode_lint_sort = ['E', 'C', 'I']
-let g:pymode_rope = 0
-let g:pymode_rope_completion = 0
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_quickfix_minheight = 1
-let g:pymode_quickfix_maxheight = 10
-let g:pymode_rope_goto_definition_cmd = 'e'
-let g:pymode_lint_on_fly = 1
-
 " Disable beeping
 set noerrorbells
 set vb t_vb=
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-let g:jedi#use_tabs_not_buffers = 0
+"ale
+"let g:ale_sign_column_always = 1
+"let g:ale_set_highlights = 0
+let g:ale_lint_on_enter = 1
+nmap sp <Plug>(ale_previous_wrap)
+nmap sn <Plug>(ale_next_wrap)
+nnoremap <Leader>t :ALEToggle<CR>
+nnoremap <Leader>d :ALEDetail<CR>
 
-
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
-
-let g:syntastic_python_checkers=['pylint']
-"let g:syntastic_python_checkers=['pep8']
-"let g:syntastic_python_pylint_args='--disable=C0111,R0903,C0301'
-let g:syntastic_python_pylint_args='--rcfile=~/default.pylintrc'
-
-"if v:version >= 700
-"    au BufLeave * let b:winview = winsaveview()
-"    au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
-"endif
-"
-
-let g:autopep8_disable_show_diff=1
-"let g:autoflake_remove_all_unused_imports=1
-"let g:autoflake_disable_show_diff=1
-
+"let g:ale_echo_msg_error_str = 'E'
+"let g:ale_echo_msg_warning_str = 'W'
+"let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 set encoding=utf-8
+
